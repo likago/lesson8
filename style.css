@@ -1,0 +1,104 @@
+.christmas {
+    width: 1990px;
+    height: 960px;
+    position: relative;
+}
+.background{
+    width: 100%;
+    height: 100%;
+}
+.claus {
+    width: 500px;
+    height: 550px;
+    position: absolute;
+    bottom: 70px;
+    animation-name: santa;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.claus img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes santa {
+    0% {
+        left: 350px;
+        transform: rotate(-20deg);
+    }
+    50% {
+        bottom: 230px;
+    }
+    100%{
+        left:1000px;
+        transform: rotate(20deg);
+    }
+}
+.deer {
+    width: 550px;
+    height: 650px ;
+    position: absolute;
+    left: -550px;
+    bottom: -10px;
+    animation-name: reindeer;
+    animation-delay: 2s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1;
+}
+.deer img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes reindeer {
+    from {
+        left: -150px;
+    }
+    to {
+        left:1900px;
+    }
+}
+.elf {
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    right: 20px;
+    animation-name: elfs;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.elf img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes elfs {
+    0%{
+        bottom: 10px;
+        right: 30px;
+    }
+    50% {
+        bottom: 75px;
+        right: 5px;
+    }
+    100% {
+        bottom: 60px;
+        right: 50px;
+    }
+}
+svg {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    transition: all 0.4s linear;
+}
+svg:hover {
+    background-color: #8ebbfd;
+    border-radius: 30px;
+}
+ 
